@@ -1,5 +1,5 @@
 Spiking neural network simulator which allows to simulate neuronal 
-cultures placed over a Multi-Electrode Arrays (MEAs). 
+cultures placed over Multi-Electrode Arrays (MEAs). 
 
 MEAs can be used to stimulate and/or record the activity of the 
 neuronal culture. Thus, these devices might enable the use of 
