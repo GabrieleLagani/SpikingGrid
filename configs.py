@@ -5,7 +5,7 @@ class Configuration:
 	def __init__(self, config_name, inpt_shape=(1, 6, 6), grid_shape=(1, 6, 10), classes=None,
 	             n_train=50000, n_eval=10000, batch_size=1, eval_batch_size=64, eval_interval=50,
 	             n_epochs=1, inpt_norm=None, intensity=200., label_intensity=200., time=100, dt=1.,
-	             refr=5, v_rest=.5, v_reset=.5, v_lb=0., v_th=1., v_decay=50., tr_decay=20., lr=(1e-4, 1e-2),
+	             refr=5, v_rest=0., v_th=1., v_reset=.5, v_lb=None, v_decay=50., tr_decay=20., lr=(1e-4, 1e-2),
 	             neuron_shape=(12, 20), sigma=1., conn_str=1., sigma_exc=1., exc_str=1., sigma_inh=1., inh_str=1., theta_w=1e-3):
 		self.CONFIG_NAME = config_name
 		self.RESULT_FOLDER = P.RESULT_FOLDER + "/" + self.CONFIG_NAME
@@ -79,17 +79,6 @@ class Configuration:
 			assignments[:, 4:, -1] = classes[3]
 		else: raise NotImplementedError("Error in config. " + self.CONFIG_NAME + ": assignments undefined for grid shape " + str(self.GRID_SHAPE))
 		return assignments
-
-# Task params
-# V_REST = 0., V_LB = None
-#                                           NEURON_SHAPE = (12, 20)       NEURON_SHAPE = (78, 130)
-# EXC_STRENGTH = 3., INH_STRENGTH = 300.            95%                             85%
-# EXC_STRENGTH = 8., INH_STRENGTH = 800.            50%                             94%
-
-# Bio params
-# V_REST = 0.5, V_LB = 0.
-#                                           NEURON_SHAPE = (12, 20)       NEURON_SHAPE = (78, 130)
-# EXC_STRENGTH = 1., INH_STRENGTH = 10.            90%                             70%
 
 CONFIG_LIST = [
 	

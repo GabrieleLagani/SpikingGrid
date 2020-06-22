@@ -29,12 +29,13 @@ DURATION = 10
 SPARSITY = 0.25
 TAU = 20.
 
-# Neuron-related params
+# Neuron-related params. NB: in simulation, 0. membrane potential is equivalent to -90mV,
+# 1. membrane potential is equivalent to -50mV, 0.5 membrane potential is equivalent to -70mV
 REFR = 5
 V_REST = 0.5
+V_TH = 1.
 V_RESET = 0.5
 V_LB = 0.
-V_TH = 1.
 V_DECAY = 50.
 TR_DECAY = 20.
 LEARNING_RATE = (1e-4, 1e-2)
