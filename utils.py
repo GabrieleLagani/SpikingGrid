@@ -232,7 +232,7 @@ def plot_st_resp(data, series_names, step, path):
 				ax1.set_yticks([0., 1.])
 				ax1.set_yticklabels([0., 1.])
 				ax1.set_ylabel("Spikes")
-				ax1.legend()
+				#ax1.legend()
 			else:
 				ax1.set_xticklabels([])
 				ax1.set_yticklabels([])

@@ -42,7 +42,7 @@ LEARNING_RATE = (1e-4, 1e-2)
 
 # Topology-related parameters
 NEURON_SHAPE = (78, 130) #(12, 20) #
-SIGMA = 0.1
+SIGMA = 0.1 # NB: 1.0 in simulation is equivalent to 3mm in reality
 CONN_STRENGTH = 1.
 SIGMA_LATERAL_EXC = 0.4
 EXC_STRENGTH = 1.
