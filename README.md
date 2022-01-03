@@ -20,6 +20,8 @@ biological cultures.
 A fundamental aspect of this work is to show the potential of the 
 interplay between Computer Science and Neurobiology.
 
+Link to the paper: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9441166&casa_token=gkxO3Q1EfBoAAAAA:EZZ_j6GqcVivb7NH-a6N4jDAUeiYFGsg9ub2Ju1mNeL4_00P3RI--YnIQXoL4zHY8U8FWJTokt8&tag=1
+
 The simulator can be used as follows:  
 In the file `configs.py` it is possible to specify custom experimental
 configurations, defining the various parameters of the simulation. 
